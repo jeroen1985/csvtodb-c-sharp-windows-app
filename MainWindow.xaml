@@ -1,0 +1,14 @@
+﻿<Window x:Class="CSVtoDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSVtoDB"
+        mc:Ignorable="d"
+        Title="CSVtoDB" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="loadCsv" Content="Load CSV" HorizontalAlignment="Left" Margin="100,95,0,173" Width="100" Cursor="Hand" Click="loadCsv_Click"/>
+        <Button x:Name="pushToDb" Content="Push to Database" HorizontalAlignment="Left" Margin="317,95,0,173" Width="100" Click="pushToDb_Click" IsEnabled="False" Cursor="Hand"/>
+        <ProgressBar x:Name="progressbar1" HorizontalAlignment="Left" Height="37" Margin="100,177,0,0" VerticalAlignment="Top" Width="317" ValueChanged="ProgressBar_ValueChanged"/>
+    </Grid>
+</Window>
